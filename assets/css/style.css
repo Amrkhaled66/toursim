@@ -1,0 +1,5 @@
+@import url("normalize.css");       /* Normalize styles for consistent cross-browser rendering */
+@import url("base.css");            /* Base styles for global page setup */
+@import url("utilities.css");       /* Utility classes for single-purpose, helper styles */
+@import url("partials/header.css"); /* Specific styles for individual sections (like header) */
+@import url("components/HomePage.css");  /* Component-specific styles for the homepage */
