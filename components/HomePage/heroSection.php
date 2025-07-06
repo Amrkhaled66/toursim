@@ -1,9 +1,15 @@
 <div class="hero">
     <div class="container">
-        <div class="hero-content">
-            <h1 class="hero-title">مرحبًا بكم في وجهتي</h1>
-            <p class="hero-description">اكتشف أفضل الوجهات السياحية في العالم</p>
-            <a href="search.php" class="btn btn-primary">ابحث الان</a>
+        <div class="hero-top">
+            <div class="hero-content">
+                <h1 class="hero-title">شاهد العالم بتكلفة أقل!</h1>
+                <p class="hero-subTitle">مناسب لك تمامًا</p>
+                <p class="hero-description">وفر حتى 50% على أفضل المعالم السياحية والجولات والأنشطة مع
+                    وجهتي</p>
+            </div>
+            <?php require 'components/shared/TravelSearch.php'; ?>
+            <div>
+            </div>
         </div>
     </div>
 </div>

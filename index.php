@@ -6,7 +6,6 @@ ob_start(); // Start capturing output
 ?>
 
 <main>
-
   <?php require 'components/HomePage/heroSection.php'; ?>
 </main>
 

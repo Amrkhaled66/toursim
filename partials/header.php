@@ -1,5 +1,5 @@
 <!-- components/Navbar.php -->
-<header class="header fixed w-full container">
+<header class="header fixed w-full  container">
   <div class="flex-center gap-3">
     <button id="nav-toggle-btn" class=" show-small-screen mobile-nav-toggle">
       <?php

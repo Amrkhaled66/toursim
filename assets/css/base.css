@@ -216,7 +216,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Cairo", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: var(--font-size-md);
 }
 
@@ -243,5 +243,3 @@ button {
   position: relative;
   margin: 2rem;
 }
-/* } */
-

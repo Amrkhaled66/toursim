@@ -1,0 +1,147 @@
+.search-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: warp;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  border-radius: var(--radius-xl);
+  background: white;
+  /* max-width: 1180px; */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  justify-content: space-between;
+  align-items: end;
+}
+
+/* Each field block */
+.field {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  align-items: start;
+  border-left: 1px solid var(--stroke-color);
+  padding-left: 24px;
+}
+
+/* Inner content of field */
+.field-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  flex: 1;
+}
+
+.field label {
+  color: var(--text-color);
+  text-align: right;
+}
+
+.field select,
+.field input[type="date"] {
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--radius-lg);
+  outline: none;
+  background: #ebf0ff;
+  font-size: 14px;
+  width: 100%;
+}
+
+.field select {
+  appearance: none;
+}
+
+/* Search button spans full width on mobile */
+.search-btn {
+  height: fit-content;
+  white-space: nowrap;
+  flex: 1;
+}
+
+/* Custom Dropdown */
+.custom-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-toggle {
+  position: relative;
+  background: #ebf0ff;
+  padding: 8px 16px;
+  border-radius: var(--radius-xl);
+  border: none;
+  cursor: pointer;
+  text-align: right;
+  font-size: 14px;
+  width: 100%;
+}
+
+.dropdown-toggle-btn {
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: white;
+  border: 1px solid var(--stroke-color);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 100;
+}
+
+.dropdown-menu button {
+  padding: 10px;
+  background: white;
+  border: none;
+  text-align: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background-color: #ebf0ff;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 🔁 Responsive Behavior */
+@media (max-width: 992px) {
+  .search-box {
+    flex-direction: column;
+  }
+  .field {
+    flex: 1;
+    width: 100%;
+    text-align: right;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: column;
+  }
+  .field {
+    flex: 1 1 100%; /* 1 per row on mobile */
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .search-btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
