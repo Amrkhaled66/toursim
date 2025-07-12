@@ -2,6 +2,7 @@
   /* Primary Color System - HSL Based for Dynamic Control */
   --primary-hue: 225;
   --primary-color: hsla(var(--primary-hue), 100%, 60%, 1);
+  --primary-color-800: hsl(var(--primary-hue), 67%, 33%);
   --primary-color-light: hsl(var(--primary-hue), 53%, 55%);
   --primary-color-dark: hsl(var(--primary-hue), 67%, 43%);
   --light-bg-dark: hsl(var(--primary-hue), 80%, 94.12%);
@@ -12,6 +13,7 @@
   --radius-md: 8px;
   --radius-lg: 12px;
   --radius-xl: 16px;
+  --radius-2xl: 20px;
 
   /* Card Styling */
   --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -39,7 +41,7 @@
   /* Theme Variables */
   --bg-primary: #f8fafc;
   --bg-secondary: #ffffff;
-  --text-primary: #1f2937;
+  --text-primary: #000925;
   --text-secondary: #6b7280;
   --accent-color: var(--primary-color);
 
@@ -72,7 +74,7 @@
   --font-weight-normal: 400;
   --font-weight-bold: 600;
 
-  --section-padding: 70px 0;
+  --section-padding: 50px 0;
   --header-height: 75px;
   --header-padding: 10px;
   --hero-nav-height: 106px;
@@ -81,12 +83,11 @@
   --gap-base: 4px;
 }
 
-/* { */
 .container {
   width: 100%;
-  /* max-width: 1320px; */
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 
 @media (min-width: 1600px) {
@@ -105,9 +106,6 @@
   .container {
     max-width: 1118px;
   }
-  html {
-    font-size: 13px;
-  }
 }
 
 @media (max-width: 992px) {
@@ -121,7 +119,6 @@
     max-width: 768px;
   }
 }
-/* } */
 
 a,
 button,
@@ -140,6 +137,7 @@ h4 {
 /* { */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 *,
@@ -216,7 +214,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Poppins", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: var(--font-size-md);
 }
 
@@ -228,9 +226,8 @@ button {
 }
 
 .section-title {
-  margin-bottom: clamp(1.5rem, 5vw, 2.8rem);
-  font-size: clamp(1.5rem, 5vw, 3rem);
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 700;
   line-height: 1.5;
   color: var(--text-primary);
 }
@@ -243,3 +240,9 @@ button {
   position: relative;
   margin: 2rem;
 }
+
+.swiper {
+  margin-right: 0 !important;
+}
+
+/* } */

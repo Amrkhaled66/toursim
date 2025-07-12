@@ -1,11 +1,11 @@
 <!-- components/Navbar.php -->
-<header class="header fixed w-full  container">
+<header class="header container">
   <div class="flex-center gap-3">
     <button id="nav-toggle-btn" class=" show-small-screen mobile-nav-toggle">
       <?php
       $icon = "gg:menu";
-      $width = 20;
-      $height = 20;
+      $width = 24;
+      $height = 24;
       include 'components/shared/icon.php';
       ?>
     </button>
@@ -35,8 +35,8 @@
           <a href="#">جولات سياحية</a>
           <?php
           $icon = "entypo:chevron-small-down";
-          $width = 20;
-          $height = 20;
+          $width = 24;
+          $height = 24;
           include 'components/shared/icon.php';
           ?>
         </div>
@@ -51,8 +51,8 @@
           <a href="#">الوجهات</a>
           <?php
           $icon = "entypo:chevron-small-down";
-          $width = 20;
-          $height = 20;
+          $width = 24;
+          $height = 24;
           include 'components/shared/icon.php';
           ?>
         </div>
@@ -68,8 +68,8 @@
           <a href="#">المدونة</a>
           <?php
           $icon = "entypo:chevron-small-down";
-          $width = 20;
-          $height = 20;
+          $width = 24;
+          $height = 24;
           include 'components/shared/icon.php';
           ?>
         </div>
@@ -98,8 +98,8 @@
 
         <?php
         $icon = "iconamoon:search-light";
-        $width = 20;
-        $height = 20;
+        $width = 24;
+        $height = 24;
         include 'components/shared/icon.php';
         ?>
       </button>
@@ -115,8 +115,8 @@
     <button class="login-btn btn flex gap-4 btn-primary">
       <?php
       $icon = "solar:user-linear";
-      $width = 20;
-      $height = 20;
+      $width = 24;
+      $height = 24;
       include 'components/shared/icon.php';
       ?>
       تسجيل الدخول</button>
@@ -124,8 +124,8 @@
     <button class="main-color-onHover show-small-screen">
       <?php
       $icon = "solar:user-linear";
-      $width = 20;
-      $height = 20;
+      $width = 24;
+      $height = 24;
       include 'components/shared/icon.php';
       ?>
     </button>

@@ -56,7 +56,8 @@
 /* =============== Button Styles =============== */
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  width: 200px;
+  padding: 12px 0px 12px 0px;
   border-radius: var(--radius-xl);
   font-weight: 600;
   text-align: center;
@@ -93,6 +94,7 @@
   background-color: transparent;
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
+  font-weight: bold;
 }
 
 .btn-outline:hover {
@@ -156,3 +158,9 @@
 }
 
 /* =============== Shared =============== */
+
+/* =============== Text =============== */
+.text-sm {
+  font-size: 12px;
+}
+/* =============== Text =============== */
